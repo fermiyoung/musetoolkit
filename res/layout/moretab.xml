@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/more"
+    android:background="#000000"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+
+<!-- 
+        <TextView  
+             android:layout_width="fill_parent"  
+             android:layout_height="wrap_content"  
+             android:text="@string/sine_label"  
+        />      
+
+ -->
+    
+<RelativeLayout android:orientation="horizontal"
+	android:id="@+id/top_navigate" 
+	android:background="@drawable/top_back_image"
+	android:layout_width="fill_parent" 
+	android:layout_height="50dp">
+
+		<TextView
+	    android:id="@+id/NavigateTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:layout_centerVertical="true"
+	    android:text="@string/moretab_title"
+	    android:textColor="#ffffffff"
+	    android:textSize="20sp" />
+
+</RelativeLayout> 
+    
+    <GridView 
+        android:id="@+id/MyGridView" 
+        android:layout_alignParentTop="true" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:columnWidth="80dp" 
+        android:stretchMode="columnWidth" 
+        android:numColumns="4" 
+        android:horizontalSpacing="20dp" 
+        android:verticalSpacing="30dp" 
+        android:gravity="center">
+     </GridView>   
+
+    
+</LinearLayout>

@@ -1,0 +1,30 @@
+#N canvas 725 298 531 421 10;
+#X floatatom 231 71 6 20 500 1 Receive:tempo tempo -, f 6;
+#X obj 231 106 expr 1000/($f1/60);
+#X floatatom 231 133 5 0 0 0 - - -, f 5;
+#X obj 180 134 tgl 20 0 empty play Receive:play -80 7 0 10 -4034 -1
+-1 0 1;
+#X obj 180 184 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 88 219 osc~ 3000;
+#X obj 180 217 del 50;
+#X msg 180 246 0;
+#X msg 147 246 1;
+#X obj 89 279 *~;
+#X obj 89 372 dac~;
+#X obj 180 156 metro 500;
+#X obj 90 324 /~ 2;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 11 1;
+#X connect 3 0 11 0;
+#X connect 4 0 6 0;
+#X connect 4 0 8 0;
+#X connect 5 0 9 0;
+#X connect 6 0 7 0;
+#X connect 7 0 9 1;
+#X connect 8 0 9 1;
+#X connect 9 0 12 0;
+#X connect 11 0 4 0;
+#X connect 12 0 10 0;
+#X connect 12 0 10 1;

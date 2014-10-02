@@ -1,0 +1,44 @@
+<RelativeLayout android:orientation="horizontal"
+	android:id="@+id/top_navigate" 
+	android:background="@drawable/top_back_image"
+	android:layout_width="fill_parent" 
+	android:layout_height="40dp"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<LinearLayout 
+	    android:gravity="center"
+		android:layout_gravity="center_vertical" 
+		android:orientation="vertical"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" 
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5dip">
+		
+		<TextView
+		    android:id="@+id/NavigateBack"
+		    android:layout_width="match_parent"
+		    android:layout_height="20dp"
+		    android:background="@drawable/btn_back_bg"
+		    android:clickable="true"
+		    android:gravity="center"
+		    android:paddingLeft="4px"
+		    android:text="返回"
+		    android:textColor="#ffffffff"
+		    android:textSize="15sp" />
+		
+	</LinearLayout>
+	
+  
+		<TextView
+	    android:id="@+id/NavigateTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:layout_centerVertical="true"
+	    android:text="@string/sine_title"
+	    android:textColor="#ffffffff"
+	    android:textSize="15.0sp" />
+	
+	
+</RelativeLayout>

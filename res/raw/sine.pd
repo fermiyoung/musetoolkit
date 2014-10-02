@@ -1,0 +1,16 @@
+#N canvas 655 522 450 300 10;
+#X obj 173 25 bng 25 250 50 0 empty trigger empty 17 7 0 10 -4034 -1
+-1;
+#X obj 173 64 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 100 62 osc~ 440;
+#X obj 100 172 dac~;
+#X obj 100 124 *~;
+#X text 210 24 r:trigger;
+#X text 86 209 This patch is used to produce sine wave.;
+#X text 86 228 The object osc~ is the sine wave oscillator.;
+#X connect 0 0 1 0;
+#X connect 1 0 4 1;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 4 0 3 1;

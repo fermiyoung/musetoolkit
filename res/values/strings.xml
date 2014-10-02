@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Muse ToolKit</string>
+
+    <!-- 此处开始设置主界面中各子页面标题 -->
+    <string name="signaltab_title">信号发生器</string>
+    <string name="testtab_title">信号测试功能</string>
+    <string name="calctab_title">计算类功能</string>
+    <string name="theorytab_title">声音相关理论</string>
+    <string name="moretab_title">系统设置</string>
+    
+    <!-- 此处开始设置主页按钮名称 -->
+    <string name="main_title">Muse ToolKit</string>
+    <string name="guitar_label">吉他调律</string>
+    <string name="violin_label">提琴调律</string>
+    <string name="piano_label">钢琴调律</string>
+    <string name="touch_label">触摸屏控制</string>
+    <string name="sine_label">正  弦  波</string>
+    <string name="sawtooth_label">锯  齿  波</string>
+    <string name="triangle_label">三  角  波</string>
+    <string name="wnoise_label">白  噪  声</string>
+    <string name="pnoise_label">粉红噪声</string>
+    <string name="sweep_label">扫频信号</string>
+    <string name="spl_label">声压测量</string>
+    <string name="sensor_label">传感器</string>
+    <string name="metro_label">节拍器</string>
+    <string name="test_label">音频测试</string>
+    <string name="about_label">关    于</string>
+    <string name="exit_label">退    出</string>
+
+    <!-- 此处开始设置Piano对话框的标题及对话框中的文本内容 -->
+    <string name="piano_title">钢琴调律</string>
+    <string name="piano_text">
+        \n钢琴调律简单地说就是将琴弦拧紧，使其达到一定的音高（国际标准音）。
+        即以小字一组a音，振动频率以440Hz为标准，按十二平均律的生律方法来调试钢琴的每一个音。
+        钢琴调律是一个较复杂的工作，不仅要将音调准，而且要将钢琴各机械部分调试正常，
+        使各个系统恢复正常。让钢琴的良好演奏性能及音乐效果得到充分发挥。
+        \n首先钢琴主要发声是张满近230根琴弦的木质音板与它连张一起的铸铁框架。
+        220多根琴弦被分成几组，构成弦列系统：每根琴弦的平均张力约90公斤，整台钢琴的总张力达20吨左右。
+        由于琴弦和铁架及音板都有弹性，它们在琴弦绷紧后，就成为一个有着很大内应力的综合弹性体，在音槌的敲击下，
+        琴弦和弹性体作用规律的振动，发出悦耳的音乐，由于这个综合弹性体本身内应力很大，而且会受到温度、湿度、气压等影响，
+        同时又在不断地振动发声，所以钢琴的音律还是处于不断的变化之中。
+        这种变化如果不进行规范和校正，任期变化，将会使整台钢琴的音高处于混乱状态。
+        \n钢琴在使用时处于敲击运动状态，甚至一天到晚都不休息，琴弦所受的外力越大，其变化就越明显。
+        因而他和许多乐器（如提琴、二胡、吉它）一样，需要不断地调音（定弦）。
+        但值得庆幸的是，在这一类形的乐器中，钢琴的稳定性是最强的。（一般能维持4--6个月），而且每次调音之后都能得到美好的音色。
+        因此，钢琴调音是维持钢琴准确音调和优美音色的必要手段。
+        </string>    
+    
+    <!-- 此处开始设置Touch对话框的标题及对话框中的文本内容 -->
+    <string name="touch_title">触摸屏控制</string>
+    <string name="touch_text">
+        \n本功能利用Android系统触摸屏产生不同的声音信号，利用触摸屏的空间分布，实现X-Y轴坐标系的控制；
+        在Pure Data编程中可分别利用X轴和Y轴来控制声音的不同参数，以实现不同的声音效果。
+        \n当前功能模块只实现单点触摸的控制，利用相同的思路，可以实现多点触摸控制声音更多参数的效果。
+        \n其中，本例设计中，屏幕左上角为X-Y坐标原点。
+        </string>
+    
+    <!-- 此处开始设置Sine对话框的标题及对话框中的文本内容 -->
+    <string name="sine_title">正弦波信号</string>
+    <string name="sine_text">
+        \n正弦波是频率成分最为单一的一种信号，因这种信号的波形是数学上的正弦曲线而得名。
+        任何复杂信号——例如音乐信号，都可以看成由许许多多频率不同、大小不等的正弦波复合而成。
+        \n正弦曲线可表示为y=Asin(ωx+φ)+k，定义为函数y=Asin(ωx+φ)+k在直角坐标系上的图象，
+        其中sin为正弦符号，x是直角坐标系x轴上的数值，
+        y是在同一直角坐标系上函数对应的y值，k、ω和φ是常数（k、ω、φ∈R且ω≠0）。
+        \n一个正弦信号可表示为 x(t) = Asin(ω*t+φ)=Acos(ω*t+φ－π/2) 。
+        式中，A 为振幅，ω为角频率（弧度/秒），φ 为初始相角（弧度）。正弦信号是周期信号，其周期T为：T=2π/ω=1/f。
+        由于余弦信号与正弦信号只是在相位上相差π/2，所以将它们统称为正弦型信号（简称正弦信号）。工业及照明用电就是正弦信号。
+        </string>
+
+    <!-- 此处开始设置Sawtooth对话框的标题及对话框中的文本内容 -->
+    <string name="sawtooth_title">锯齿波信号</string>
+    <string name="sawtooth_text">
+        \n锯齿波（Sawtooth Wave）是常见的波形之一。标准锯齿波的波形\先呈直线上升，随后陡落，再上升，再陡落，如此反复。
+        \n用分段函数表示锯齿波的表达式是A=2a(ft-[ft])-a（f为频率，a为振幅）。方括号为向下取整函数，或高斯函数。
+        \n用级数形式表示，则为A=-2/πΣ(sin(2πkft)/k)(k=1,2,...,∞)。
+        \n锯齿波音色显得铿锵嘹亮，有穿透力。与方波一样，锯齿波是合成乐器中常出现的合成主音音色。
+        在GM音源的音色库中，第82号音色就是锯齿波音色。
+        </string>  
+
+    <!-- 此处开始设置Triangle对话框的标题及对话框中的文本内容 -->
+    <string name="triangle_title">三角波信号</string>
+    <string name="triangle_text">
+        \n三角波和锯齿波是有区别的，三角波指上升沿和下降沿对称的波形，而锯齿波则主要是上升沿和下降沿不对称的波形。
+        \n三角波和方波的傅里叶级数都是基波的奇次谐波。不同在于方波的谐波系数是1/n，三角的谐波系数是1/n^2。
+        \n积分电路的传递函数是Y/X=ω0/s，也就是说，n次谐波的衰减倍数是1次的n倍，而任何一次谐波的相移都是90°。
+        \n相当于所有谐波（包含基波）的相位平移90°，以基波为准，其它谐波的衰减系数是1/n。
+        </string>  
+
+    <!-- 此处开始设置WhiteNoise对话框的标题及对话框中的文本内容 -->
+    <string name="wnoise_title">白噪声信号</string>
+    <string name="wnoise_text">
+        \n白噪声是指功率谱密度在整个频域内均匀分布的噪声。所有频率具有相同能量密度的随机噪声称为白噪声。
+        人耳的频率响应听起来它是非常明亮的“咝”声，每高一个八度，频率就升高一倍。因此高频率区的能量也显著增强。
+        \n白噪声的应用领域之一是建筑声学，为了减弱内部空间中分散人注意力并且不希望出现的噪声（如人的交谈)，使用持续的低强度噪声作为背景声音。
+        一些紧急车辆的警报器也使用白噪声，因为白噪声能够穿过如城市中交通噪声这样的背景噪声并且不会引起反射，所以更加容易引起人们的注意。
+        \n在电子音乐中也有白噪声的应用，它被直接或者作为滤波器的输入信号以产生其它类型的噪声信号，尤其是在音频合成中，
+        经常用来重现类似于铙钹这样在频域有很高噪声成分的打击乐器。
+        \n白噪声也用来产生冲击响应。为了在一个演出地点保证音乐会或者其它演出的均衡效果，从PA系统发出一个瞬间的白噪声或者粉红噪声，
+        并且在不同的地方监测噪声信号，这样工程师就能够建筑物的声学效应能够自动地放大或者削减某些频率，从而就可以调整总体的均衡效果以得到一个平衡的和声。
+        \n白噪声可以用于放大器或者电子滤波器的频率响应测试，有时它与响应平坦的话筒或和自动均衡器一起使用。
+        这个设计的思路是系统会产生白噪声，话筒接收到扬声器产生的白噪声，然后在每个频率段进行自动均衡从而得到一个平坦的响应。
+        这种系统用在专业级的设备、高端的家庭立体声系统或者一些高端的汽车收音机上。
+        </string>    
+
+    <!-- 此处开始设置PinkNoise对话框的标题及对话框中的文本内容 -->
+    <string name="pnoise_title">粉红噪声信号</string>
+    <string name="pnoise_text">
+        \n粉红噪音(Pink Noise)是自然界最常见的噪音，简单说来，粉红噪音的频率分量功率主要分布在中低频段。
+        从波形角度看，粉红噪音是分形的，在一定的范围内音频数据具有相同或类似的能量。
+        \n从功率（能量）的角度来看，粉红噪音的能量从低频向高频不断衰减，曲线为1/f，通常为每8度下降3分贝。
+        粉红噪音是最常用于进行声学测试的声音。利用粉红噪音可以模拟出比如瀑布或者下雨的声音。
+        \n当你需要专心工作，而周遭总是有繁杂的声音时，就可以选用这两种声音来加以遮蔽。
+        一般来说，通常的情况下可以选用白色噪音，而粉红色噪音则是特别针对说话声的遮蔽材料。
+        \n粉红色噪音又被称做频率反比(1/f)噪音，因为它的能量分布与频率成反比，或者说是每一个八度音程 (Octave) 能量就衰减3dB。
+        </string>        
+
+    <!-- 此处开始设置Sweep对话框的标题及对话框中的文本内容 -->
+    <string name="sweep_title">扫频信号</string>
+	<string name="sweep_button_text">开始/停止</string>
+    <string name="sweep_text">
+        \n扫频是为了测试而设计的，因此扫频信号就是为了测试，它主要用来测试元、器件，以及整机的频率特性。
+        频率在一定范围内周期变化的等幅信号。如幅度为10mV,频率从30kHz开始以5kHz的步进变化到100kHz。然后再从30kHz开始重复上述过程。
+        如果一个信号发生器，产生的信号的没有间断的，这个信号的频率是连续变化的，称为扫频信号发生器。
+        扫频仪有面对不同的频段（低频、中频、高频）的品种。不用扫频方式测量，就要逐个地设置频率，逐个地测，所谓点测法。
+        用了扫频信号测试频率特性，快速、直观。而且可以在线测试，效率高。广泛地使用在科研、生产上。
+        扫频试验中，正弦波的频率随时间线性变化，叫做线性扫频；扫频试验中，正弦波的频率按对数规律变化，叫做对数扫频。
+        </string>       
+    
+    
+    <!-- 此处开始设置SPL对话框的标题及对话框中的文本内容 -->
+    <string name="spl_title">声压级测试</string>
+    <string name="spl_text">
+        声压级是声音信号的重要信息，声压级使用dB（分贝）为单位进行表示。
+        \n声压（acoustic pressure）是指声波通过媒质时，由振动所产生的压强改变量。
+        声波在空气中传播時，空气的疏密程度会随声波而改变（示意圖見縱波），因此，区域性的压强也会随之改变，此即为声压。
+        声压常用字母 "p" 表示，在国际单位制中，声压的衡量单位是帕斯卡（符号Pa）。
+        \n声压级（SPL，Sound Pressure Level）是指以对数标度衡量有效声压相对于一个基准值的大小，用分贝（dB）来描述其与基准值的关系。
+        人类对于1KHz声音的听阈（即产生听觉的最低声压）为20µPa，通常以此作为声压级的基准值。        
+        </string> 
+
+    <!-- 此处开始设置Metro对话框的标题及对话框中的文本内容 -->
+    <string name="metro_title">节拍器功能</string>
+    <string name="metro_text">
+        \n三角波和锯齿波是有区别的，三角波指上升沿和下降沿对称的波形，而锯齿波则主要是上升沿和下降沿不对称的波形。
+        \n三角波和方波的傅里叶级数都是基波的奇次谐波。不同在于方波的谐波系数是1/n，三角的谐波系数是1/n^2。
+        \n积分电路的传递函数是Y/X=ω0/s，也就是说，n次谐波的衰减倍数是1次的n倍，而任何一次谐波的相移都是90°。
+        \n相当于所有谐波（包含基波）的相位平移90°，以基波为准，其它谐波的衰减系数是1/n。
+        </string>    
+    
+    <!-- 此处开始设置Test对话框的标题及对话框中的文本内容 -->
+    <string name="test_title">音频测试</string>
+    <string name="test_text">
+        \n本功能用于测试当前系统中Pd连接和工作状态是否正常。
+        \n在实际测试中，建议使用耳机来测试麦克风，在未接入耳机的时候，直接测试麦克风，将产生强烈声音信号回授（即声音反馈），可能损伤听力及设备！
+        </string>  
+        
+    <!-- 此处开始设置About对话框的标题及对话框中的文本内容 -->
+    <string name="about_title">关于Muse ToolKit</string>
+    <string name="about_text">
+        Muse ToolKit 0.1内部测试版
+        \n\n欢迎使用Muse ToolKit！
+        \n该工具利用Pure Data作为后台开发，使用libpd进行Android平台设计，为音乐相关用户提供相关工具！\n
+        \n
+        Pure Data官方站点：\n
+        http://puredata.info\n\n
+        libpd官方站点：\n
+        http://libpd.cc\n
+        http://github.com/libpd/libpd\n\n
+        联系我们：\n
+        yangwanjun@163.com
+    </string>
+    
+    <!-- 此处针对Test部分 -->
+	<string name="left_label">左声道测试</string>
+	<string name="right_label">右声道测试</string>
+	<string name="mic_label">麦克风测试</string>
+	<string name="play_button_text">播放/停止</string>
+	
+	<!-- 此处针对Piano部分 -->
+	<string name="pitch">设置调律音高</string>
+	<string name="radio1">422Hz</string>
+	<string name="radio2">423Hz</string>
+	<string name="radio3">435Hz</string>
+	<string name="radio4">440Hz</string>		
+	
+</resources>

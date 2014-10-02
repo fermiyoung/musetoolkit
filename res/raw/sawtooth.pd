@@ -1,0 +1,16 @@
+#N canvas 627 285 450 300 10;
+#X obj 252 35 bng 25 250 50 0 empty trigger r:trigger 30 7 0 10 -4034
+-1 -1;
+#X obj 252 74 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 155 184 dac~;
+#X obj 155 136 *~;
+#X obj 155 74 phasor~ 1000;
+#X text 82 233 The object phasor~ is the sawtooth wave oscillator.
+;
+#X text 82 214 This patch is used to produce sawtooth wave.;
+#X connect 0 0 1 0;
+#X connect 1 0 3 1;
+#X connect 3 0 2 0;
+#X connect 3 0 2 1;
+#X connect 4 0 3 0;

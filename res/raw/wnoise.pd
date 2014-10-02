@@ -1,0 +1,19 @@
+#N canvas 586 287 450 300 10;
+#X obj 186 54 bng 25 250 50 0 empty trigger empty 17 7 0 10 -4034 -1
+-1;
+#X obj 186 96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 120 192 dac~;
+#X obj 120 111 *~;
+#X text 223 53 r:trigger;
+#X obj 120 56 noise~;
+#X text 61 219 This patch is used to produce white noise wave.;
+#X text 61 238 The object noise~ is the white noise oscillator.;
+#X obj 119 151 /~ 4;
+#X text 177 154 Control the Volume;
+#X connect 0 0 1 0;
+#X connect 1 0 3 1;
+#X connect 3 0 8 0;
+#X connect 5 0 3 0;
+#X connect 8 0 2 0;
+#X connect 8 0 2 1;

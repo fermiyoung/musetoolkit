@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<TabHost 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="bottom"
+    android:id="@android:id/tabhost"
+
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:layout_alignParentBottom="true" >
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/top_back_image02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:background="@drawable/sine_bg"
+            android:layout_weight="1"/>
+
+       <!-- tabs所在的布局 -->
+
+            <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000" />
+
+        </LinearLayout>
+
+</TabHost>

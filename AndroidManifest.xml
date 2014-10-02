@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.musetoolkit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <!-- 此处设置用户权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >        
+        
+        <!-- 此处声明启动界面对应的Activity -->
+        <activity android:name=".Splash" 
+                  android:label="@string/app_name"> 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/> 
+                <category android:name="android.intent.category.LAUNCHER" /> 
+            </intent-filter> 
+        </activity>         
+        
+        <!-- 此段声明主界面对应的Activity -->
+<!--          <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+--> 
+
+        <!-- 此处声明MainAcitivity对应的Activity --> 
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>        
+        
+        <service android:name="org.puredata.android.service.PdService" />
+
+        <!-- 此处声明SignalAcitivity对应的Activity -->
+        <activity android:name=".SignalActivity"
+            android:label="@string/signaltab_title">
+        </activity>
+
+        <!-- 此处声明TestActivity对应的Activity -->
+        <activity android:name=".TestActivity"
+            android:label="@string/testtab_title">
+        </activity>
+        
+        <!-- 此处声明CalcActivity对应的Activity -->
+        <activity android:name=".CalcActivity"
+            android:label="@string/calctab_title">
+        </activity>
+        
+        <!-- 此处声明TheoryActivity对应的Activity -->
+        <activity android:name=".TheoryActivity"
+            android:label="@string/theorytab_title">
+        </activity>
+        
+        <!-- 此处声明MoreActiviry对应的Activity -->
+        <activity android:name=".MoreActivity"
+            android:label="@string/moretab_title">
+        </activity>
+        
+        <!-- 此处声明Sine对应的Activity -->
+        <activity android:name=".Sine"
+            android:label="@string/sine_title">
+        </activity>        
+
+        <!-- 此处声明Sawtooth对应的Activity -->
+        <activity android:name=".Sawtooth"
+            android:label="@string/sawtooth_title">
+        </activity> 
+
+        <!-- 此处声明Triangle对应的Activity -->
+        <activity android:name=".Triangle"
+            android:label="@string/triangle_title">
+        </activity> 
+        
+        <!-- 此处声明WhiteNoise对应的Activity -->
+        <activity android:name=".Wnoise"
+            android:label="@string/wnoise_title">
+        </activity>          
+
+        <!-- 此处声明Sweep对应的Activity -->
+        <activity android:name=".Sweep"
+            android:label="@string/sweep_title">
+        </activity>             
+        
+        <!-- 此处声明PinkNoise对应的Activity -->
+          <activity android:name=".Pnoise"
+            android:label="@string/pnoise_title">
+        </activity>         
+
+        <!-- 此处声明SPL对应的Activity -->
+        <activity android:name=".Spl"
+            android:label="@string/spl_title">
+        </activity>           
+        
+        <!-- 此处声明TEST对应的Activity -->
+        <activity android:name=".Test"
+            android:label="@string/test_title">
+        </activity>   
+
+       <!-- 此处声明Piano对应的Activity -->
+        <activity android:name=".Piano"
+            android:label="@string/piano_title">
+        </activity>          
+
+       <!-- 此处声明Touch对应的Activity -->
+        <activity android:name=".Touch"
+            android:label="@string/touch_title">
+        </activity>              
+
+       <!-- 此处声明Metro对应的Activity -->
+        <activity android:name=".Metro"
+            android:label="@string/metro_title">
+        </activity>         
+        
+        <!-- 此处声明About对应的Activity -->
+         <activity android:name=".About"
+            android:label="@string/about_title">
+        </activity>
+        
+		<activity android:label="Pure Data Preferences"
+			android:name="org.puredata.android.service.PdPreferences"
+			android:configChanges="orientation">
+		</activity> 
+        
+    </application>
+
+</manifest>

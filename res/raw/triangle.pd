@@ -1,0 +1,24 @@
+#N canvas 737 265 450 300 10;
+#X obj 74 64 phasor~ 1000;
+#X obj 74 108 *~ -1;
+#X obj 134 186 min~;
+#X obj 133 250 dac~;
+#X obj 74 140 +~ 1;
+#X obj 133 107 *~ 1;
+#X obj 155 157 *~ 1;
+#X obj 134 219 *~;
+#X obj 210 155 bng 15 250 50 0 empty trigger Recieve:trigger 17 7 0
+10 -262144 -1 -1;
+#X obj 210 189 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 0 0 1 0;
+#X connect 0 0 5 0;
+#X connect 1 0 4 0;
+#X connect 2 0 7 0;
+#X connect 4 0 6 0;
+#X connect 5 0 2 0;
+#X connect 6 0 2 1;
+#X connect 7 0 3 0;
+#X connect 7 0 3 1;
+#X connect 8 0 9 0;
+#X connect 9 0 7 1;

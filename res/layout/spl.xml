@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/spl_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+<RelativeLayout android:orientation="horizontal"
+	android:id="@+id/top_navigate" 
+	android:background="@drawable/top_back_image"
+	android:layout_width="fill_parent" 
+	android:layout_height="50dp">
+	
+	<LinearLayout 
+	    android:gravity="center"
+		android:layout_gravity="center_vertical" 
+		android:orientation="vertical"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" 
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5dip">
+		
+		<TextView
+		    android:id="@+id/NavigateBack"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:background="@drawable/btn_back_bg"
+		    android:clickable="true"
+		    android:gravity="center"
+		    android:paddingLeft="0px"
+		    android:text="        "
+		    android:textColor="#ffffffff"
+		    android:textSize="20dp" />
+		
+	</LinearLayout>
+	
+  
+		<TextView
+	    android:id="@+id/NavigateTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:layout_centerVertical="true"
+	    android:text="@string/spl_title"
+	    android:textColor="#ffffffff"
+	    android:textSize="20sp" />
+	
+	
+</RelativeLayout>
+
+    <!-- 此段代码保证后面组件居中显示 -->
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center">
+	    
+    <!-- 本文件定义SPL信息的布局 -->
+    <TextView 
+        android:id="@+id/spl_content"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spl_text" />
+
+   	<TextView android:id="@+id/spl_box" 
+   	    android:textColor="#ffffff"
+   	    android:textSize="48sp"
+   	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:gravity="bottom"
+		android:scrollbars="vertical" 
+		android:text="" />     
+    	
+	</LinearLayout>    
+    
+</LinearLayout>

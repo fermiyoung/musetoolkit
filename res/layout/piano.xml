@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/piano_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+<RelativeLayout android:orientation="horizontal"
+	android:id="@+id/top_navigate" 
+	android:background="@drawable/top_back_image"
+	android:layout_width="fill_parent" 
+	android:layout_height="50dp">
+	
+	<LinearLayout 
+	    android:gravity="center"
+		android:layout_gravity="center_vertical" 
+		android:orientation="vertical"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" 
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5dip">
+		
+		<TextView
+		    android:id="@+id/NavigateBack"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:background="@drawable/btn_back_bg"
+		    android:clickable="true"
+		    android:gravity="center"
+		    android:paddingLeft="0px"
+		    android:text="        "
+		    android:textColor="#ffffffff"
+		    android:textSize="20dp" />
+		
+	</LinearLayout>
+	
+  
+		<TextView
+	    android:id="@+id/NavigateTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:layout_centerVertical="true"
+	    android:text="@string/piano_title"
+	    android:textColor="#ffffffff"
+	    android:textSize="20sp" />
+
+</RelativeLayout>
+    
+    <!-- 此段代码保证后面组件居中显示 -->
+
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center">    
+	    
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="*" >
+ 
+        <TableRow>
+<!--  
+            <Button
+            android:id="@+id/piano_button"
+            android:layout_width="wrap_content"
+            android:text="@string/piano_label" />
+-->
+        
+         <Button 
+            android:id="@+id/piano_button" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp" 
+            android:background="@layout/button" 
+            android:paddingBottom="8dp" 
+            android:paddingLeft="25dp" 
+            android:paddingRight="25dp" 
+            android:paddingTop="8dp" 
+            android:text="@string/piano_label" 
+            android:textColor="#ffffff" 
+            android:textSize="18sp" />        
+        
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center" >
+	    
+
+    <SeekBar 
+        android:id="@+id/seekBar" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+    
+    <TextView 
+        android:id="@+id/description" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="@string/pitch"
+        android:textColor="#ffffff"
+        android:max="127"
+        android:progress="69"
+        android:gravity="center" />
+
+	<!--  
+	max=127,代表它的取值范围是0-127,共128个值;
+	progress=69,代表默认值是69
+	69为标准音A的MIDI编号
+	-->
+
+
+	</LinearLayout>	    
+
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center" >	
+
+	    
+	    
+	    	
+	</LinearLayout>	
+	    
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center" >
+	
+    <RadioGroup android:orientation="horizontal" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:id="@+id/standard">
+
+            <RadioButton 
+                android:id="@+id/radio1" android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" android:checked="false" 
+                android:text="@string/radio1" android:textColor="#ffffff" android:gravity="center" />
+            <RadioButton 
+                android:id="@+id/radio2" android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" android:checked="false" 
+                android:text="@string/radio2" android:textColor="#ffffff" android:gravity="center" />
+            <RadioButton 
+                android:id="@+id/radio3" android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" android:checked="false" 
+                android:text="@string/radio3" android:textColor="#ffffff" android:gravity="center" />
+            <RadioButton 
+                android:id="@+id/radio4" android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" android:checked="true" 
+                android:text="@string/radio4" android:textColor="#ffffff" android:gravity="center" />
+            
+    </RadioGroup>    	
+	
+	    
+	</LinearLayout>
+    
+
+    <LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="80dp"
+	    android:layout_gravity="center" >
+    
+   		<TextView 
+   		    android:id="@+id/freq_box" 
+   		    android:textColor="#ffffff" 
+   		    android:textSize="30sp" 
+   		    android:layout_width="fill_parent" 
+   		    android:layout_height="70dp" 
+   		    android:gravity="bottom"
+   		    android:typeface="monospace"
+   		    android:text="" />    
+    
+	</LinearLayout>
+	
+    <ScrollView
+        android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center">    
+
+    <!-- 本文件定义About信息的布局 -->
+    <TextView 
+        android:id="@+id/piano_content"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/piano_text" />
+
+     </ScrollView>
+
+</LinearLayout>
